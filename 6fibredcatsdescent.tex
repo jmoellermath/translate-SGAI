@@ -38,16 +38,16 @@ Specifically, we should consider the pseudo-functors $\E^{op} \to \Cat$ as the o
 
 We put 
 \[\F_\circ = \coprod_{S \in \Ob (\E)} \Ob(\F(S)),\] 
-together sum of sets $\Ob(\F (S))$ (N.B. we will note here $\F(S)$ and not $\F_S$ the value in the object $S$ of $\E$ of the pseudofunctor gives, to avoid confusion of notation thereafter). So we have an obvious mapping: 
+together sum of sets $\Ob(\F (S))$ (N.B.\ we will note here $\F(S)$ and not $\F_S$ the value in the object $S$ of $\E$ of the pseudofunctor gives, to avoid confusion of notation thereafter). So we have an obvious mapping: 
 \[p_\circ \colon \F_\circ \to \Ob \E.\]
 Let 
-\[\overline\xi = (S, \xi), \, \overline \eta = (T, \eta) \qquad (\text{where } \xi \in \Ob \F(S), \, \eta \in \Ob \F(T))\]
-two elements of $\F_\circ$, and $f \in Hom(T,S)$, we let
-\[h_f(\overline \eta, \overline \xi) = Hom_{\F(T)}(\eta, f^\ast(\xi)).\]
+\[\oxi = (S, \xi), \, \oeta = (T, \eta) \qquad (\text{where } \xi \in \Ob \F(S), \, \eta \in \Ob \F(T))\]
+two elements of $\F_\circ$, and $f \in \Hom(T,S)$, we let
+\[h_f(\oeta, \oxi) = \Hom_{\F(T)}(\eta, f^\ast(\xi)).\]
 If we also have a morphism $g \colon U \to T$ in $\E$, and a $\zeta \in \Ob \F (U)$, we define a function, denoted $(u,v) \mapsto u \circ v$:
-\[h_f(\overline \eta, \overline \xi) \times h_g(\overline \zeta, \overline \eta) \to h_{fg}(\overline \zeta, \overline \xi),\]
+\[h_f(\oeta, \oxi) \times h_g(\ozeta, \oeta) \to h_{fg}(\ozeta, \oxi),\]
 i.e.\ a function
-\[Hom_{\F(T)} (\eta, f^\ast(\xi)) \times Hom_{\F(U)} (\zeta, g^\ast(\eta)) \to Hom_{\F(U)} (\zeta, (fg)^\ast(\xi)),\]
+\[Hom_{\F(T)} (\eta, f^\ast(\xi)) \times \Hom_{\F(U)} (\zeta, g^\ast(\eta)) \to \Hom_{\F(U)} (\zeta, (fg)^\ast(\xi)),\]
 for the formula
 \[u \circ v = c_{f,g} (\xi) \cdot g^\ast(U) \cdot v,\]
 i.e.\ $u \circ v$ is the composite of the sequence 
@@ -55,18 +55,52 @@ i.e.\ $u \circ v$ is the composite of the sequence
 \zeta \xrightarrow{u} g^\ast(\eta) \xrightarrow{g^\ast(u)} g^\ast f^\ast(\xi) \xrightarrow{c_{f,g}(\xi)} (fg)^\ast(\xi).\]
 On the other hand 
 \[
-    h(\overline \eta, \overline \xi) = \coprod_{f \in Hom(T,S)} h_f(\overline \eta, \overline \xi),
+    h(\oeta, \oxi) = \coprod_{f \in \Hom(T,S)} h_f(\oeta, \oxi),
 \]
 and the previous couplings define couplings
-\[h(\overline \eta, \overline \xi) \times h(\overline \zeta, \overline \eta) \to h(\overline \zeta, \overline \xi),\]
-while the definition of $h (\overline \eta, \overline \xi)$ implies an obvious function:
-\[p_{\overline \eta, \overline \xi}
-\colon h(\overline \eta, \overline \xi) \to Hom(T, S).\]
+\[h(\oeta, \oxi) \times h(\ozeta, \oeta) \to h(\ozeta, \oxi),\]
+while the definition of $h (\oeta, \oxi)$ implies an obvious function:
+\[p_{\oeta, \oxi}
+\colon h(\oeta, \oxi) \to \Hom(T, S).\]
 That said, we check the following points:
 \begin{enumerate}
-    \item The composition between elements of $h (\overline \eta, \overline \xi)$ is \emph{associative}.
-    \item For all $\overline \xi = (\xi, S)$ in $\F_\circ$, consider the identity element of
-    \[h_{id_S} (\overline \xi, \overline \xi) = Hom_{\F(S)} (id_S^\ast(\xi), \xi) = Hom_{\F(S)}(\xi,\xi),\]
-    and its image in $h (\overline \xi,\overline \xi)$. This object is a unit on the left and right for the composition between elements of $h (\overline \eta, \overline \xi)$.
+    \item The composition between elements of $h (\oeta, \oxi)$ is \emph{associative}.
+    \item For all $\oxi = (\xi, S)$ in $\F_\circ$, consider the identity element of
+    \[h_{id_S} (\oxi, \oxi) = \Hom_{\F(S)} (id_S^\ast(\xi), \xi) = \Hom_{\F(S)}(\xi,\xi),\]
+    and its image in $h (\oxi,\oxi)$. This object is a unit on the left and right for the composition between elements of $h (\oeta, \oxi)$.
 \end{enumerate}
+
+This already shows that we get a category $\F$, by posing
+\[\Ob \F = \F_\circ, \quad \Fl \F = \coprod_{\oxi, \oeta \in \F_\circ} h(\oeta, \oxi).\]
+
+(N.B.\ we can not simply take for $\Fl \F$ the union of the sets $h (\oeta, \oxi)$, because these are not necessarily disjoint.) Furthermore:
+\begin{enumerate}
+    \setcounter{enumi}{2}
+    \item The functions $p_\circ \colon \Ob \F \to \Ob \E$ and $p_1 = (p_{\oeta, \oxi} \colon \Fl\F \to \Fl \E$ define a \emph{functor} $p \colon \F \to \E$. In this way, F becomes a category on E, moreover the obvious function $h_f (\oeta, \oxi) \to \Hom (\oeta, \oxi)$ induces a \emph{bijection}
+    \[h_f(\oeta, \oxi) \xrightarrow{\sim} \Hom_f(\oeta, \oxi).\]
+    \item The obvious functions
+    \[\Ob \F(S) \to \F_\circ = \Ob \F, \quad \Fl \F(S) \to \Fl\F,\]
+    or the second is defined by the obvious functions
+    \[\Hom_{\F(S)} (\xi, \xi') = h_{id_S}(\oxi,\oxi') \to \Hom(\oxi, \oxi')\]
+    define an \emph{isomorphism}
+    \[i_S \colon \F(S) \xrightarrow{\sim} \F_S.\]
+    \item For every object $\oxi = (S, \xi)$ of $\F$, and every morphism $f \colon T \to S$ of $\E$, let us consider the element $\oeta = (T, \eta)$ of $\F_T$, with $\eta = f^\ast (\xi)$, and the element $\alpha_f (\xi)$ of $\Hom (\oeta, \oxi)$, image of $id_{f^\ast (\xi)}$ by the morphism $\Hom_{\F (T)} (f^\ast(\xi), f ^\ast(\xi)) = h_f (\oeta, \oxi) \to \Hom_f (\oeta, \oxi)$. \emph{This element is cartesian, and that's the identity in $\xi$ if $f = id_S$}, in other words, the whole $\alpha_f (\xi)$ defines a normalized cleavage of $F$ over $E$. Moreover, by construction, we have commutativity in the functor diagram
+    \[
+    \begin{tikzcd}
+        \F(S)
+        \arrow[r, "f^\ast"]
+        \arrow[d, "i_S", swap]
+        &
+        \F(T)
+        \arrow[d, "i_T"]
+        \\
+        \F_S
+        \arrow[r, "f^\ast_\F", swap]
+        &
+        \F_T
+    \end{tikzcd}\]
+    where $f^\ast_\F$ is the inverse image functor by $f$, relative to the cleavage considered on $\F$. Finally:
+    \item 
+\end{enumerate}
+
 \dots
