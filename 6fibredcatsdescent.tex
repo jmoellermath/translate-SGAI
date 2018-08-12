@@ -53,5 +53,20 @@ for the formula
 i.e.\ $u \circ v$ is the composite of the sequence 
 \[
 \zeta \xrightarrow{u} g^\ast(\eta) \xrightarrow{g^\ast(u)} g^\ast f^\ast(\xi) \xrightarrow{c_{f,g}(\xi)} (fg)^\ast(\xi).\]
-
+On the other hand 
+\[
+    h(\overline \eta, \overline \xi) = \coprod_{f \in Hom(T,S)} h_f(\overline \eta, \overline \xi),
+\]
+and the previous couplings define couplings
+\[h(\overline \eta, \overline \xi) \times h(\overline \zeta, \overline \eta) \to h(\overline \zeta, \overline \xi),\]
+while the definition of $h (\overline \eta, \overline \xi)$ implies an obvious function:
+\[p_{\overline \eta, \overline \xi}
+\colon h(\overline \eta, \overline \xi) \to Hom(T, S).\]
+That said, we check the following points:
+\begin{enumerate}
+    \item The composition between elements of $h (\overline \eta, \overline \xi)$ is \emph{associative}.
+    \item For all $\overline \xi = (\xi, S)$ in $\F_\circ$, consider the identity element of
+    \[h_{id_S} (\overline \xi, \overline \xi) = Hom_{\F(S)} (id_S^\ast(\xi), \xi) = Hom_{\F(S)}(\xi,\xi),\]
+    and its image in $h (\overline \xi,\overline \xi)$. This object is a unit on the left and right for the composition between elements of $h (\overline \eta, \overline \xi)$.
+\end{enumerate}
 \dots
