@@ -19,7 +19,8 @@ Very little has been translated so far. If there is a section you would like to 
 
  - Chapter 6
     - Chapter 6 Section 0 is done.
-    - Joe is working on Chapter 6 Section 8 right now.
+    - Chapter 6 Section 8 is done.
+    - Joe is working on chapter 6 Section 9.
 
  - Chapter 7
     - This chapter doesn't exist.
