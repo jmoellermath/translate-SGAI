@@ -3,6 +3,7 @@
 
 To simplify the exposition we assume that all preschemes in the following are locally Noetherian (at least, starting from section 2).
 
+
 \section{Basics of differential calculus}
 
 Let $X$ be a prescheme on $Y$, and $\Delta_{X/Y}$ the diagonal morphism $X\to X\times_Y X$.
@@ -14,4 +15,29 @@ It behaves well with respect to a change of base $Y'\to Y$.
 We also introduce the sheaves $\O_{X\times_Y X}/\ideal_X^{n+1}=\mathscr{P}^n_{X/Y}$, which are sheaves of \emph{rings} on $X$, giving us preschemes denoted by $\Delta_{X/Y}^n$ and called the \emph{$n$-th infinitesimal neighbourhood of $X/Y$}.
 The polysyllogism is entirely trivial, even if rather long\footnote{cf. EGA~IV~16.3.}; it seems wise to not discuss it until we use it for something helpful, with smooth morphisms.
 
+
 \section{Quasi-finite morphisms}
+
+\begin{prop}
+    Let $A\to B$ be a local homomorphism (N.B. all rings are now Noetherian) and $\mathfrak{m}$ the maximal ideal of $A$.
+    Then the following conditions are equivalent:
+    \begin{enumerate}[(i)]
+        \item $B/\mathfrak{m}B$ is of finite dimension over $k=A/\mathfrak{m}$.
+        \item $\mathfrak{m}B$ is \unsure{[\ldots]} and $B/\mathfrak{r}(B)=k(B)$ is an extension of $k=k(A)$.
+        \item The completion $\hat{B}$ of $B$ is finite over the completion $\hat{A}$ of $A$.
+    \end{enumerate}
+\end{prop}
+
+We then say that $B$ \emph{is quasi-finite} over $A$.
+A morphism $f\colon X\to Y$ is said to be quasi-finite in $x$ (or the $Y$-prescheme $f$ is said to be quasi-finite in $x$) if $\O_x$ is quasi-finite over $\O_{f(x)}$.
+\completelyunsure
+A morphism is said to be quasi-finite if it is quasi-finite in each point\footnote{}.
+
+\begin{cor}
+    If $A$ is complete then quasi-finiteness is equivalent to finiteness.
+\end{cor}
+
+We could give the usual polysyllogism (i), (ii), (iii), (iv), (v) for quasi-finite morphisms, but that doesn't seem necessary here.
+
+
+\section{Unramified morphisms}

@@ -5,9 +5,12 @@ Thanks to a [project led by Frank Calegari, Jim Borger, and William Stein](http:
 
 ## Coordination
 
+**For conventions and suchlike, see `conventions.md`.**
+
 Very little has been translated so far. If there is a section you would like to claim to translate, just edit this `README.md` and put your name under the section you'd like to help with. 
 
  - Chapter 1
+    - @thosgood
 
  - Chapter 2
 
@@ -42,8 +45,9 @@ Very little has been translated so far. If there is a section you would like to 
  - Index of Notation
 
 
-## ToDo
- - Add a bunch of `\newcommands` to a common file, so we can more easily keep notation consistent through the translation.
+## To-do
+ - Setup the Projects page (?).
+ - ~Add a bunch of `\newcommands` to a common file, so we can more easily keep notation consistent through the translation.~
  - Consider adding the `\newenvironments` to their own file and standardizing those too?
  - Translate the thing. ;)
  - Have a current working compiled version of the document in the repository.
