@@ -21,7 +21,7 @@ The polysyllogism is entirely trivial, even if rather long\footnote{cf. EGA~IV~1
 \begin{prop}
     Let $A\to B$ be a local homomorphism (N.B. all rings are now Noetherian) and $\mathfrak{m}$ the maximal ideal of $A$.
     Then the following conditions are equivalent:
-    \begin{enumerate}[(i)]
+    \begin{enumerate}[\normalfont(i)]
         \item $B/\mathfrak{m}B$ is of finite dimension over $k=A/\mathfrak{m}$.
         \item $\mathfrak{m}B$ is \unsure{[\ldots]} and $B/\mathfrak{r}(B)=k(B)$ is an extension of $k=k(A)$.
         \item The completion $\hat{B}$ of $B$ is finite over the completion $\hat{A}$ of $A$.
@@ -31,7 +31,7 @@ The polysyllogism is entirely trivial, even if rather long\footnote{cf. EGA~IV~1
 We then say that $B$ \emph{is quasi-finite} over $A$.
 A morphism $f\colon X\to Y$ is said to be quasi-finite in $x$ (or the $Y$-prescheme $f$ is said to be quasi-finite in $x$) if $\O_x$ is quasi-finite over $\O_{f(x)}$.
 \completelyunsure
-A morphism is said to be quasi-finite if it is quasi-finite in each point\footnote{}.
+A morphism is said to be quasi-finite if it is quasi-finite in each point\footnote{In EGA~II~6.2.3 we further suppose that $f$ is of finite type.}.
 
 \begin{cor}
     If $A$ is complete then quasi-finiteness is equivalent to finiteness.
@@ -41,3 +41,38 @@ We could give the usual polysyllogism (i), (ii), (iii), (iv), (v) for quasi-fini
 
 
 \section{Unramified morphisms}
+
+\begin{prop}
+    Let $f\colon X\to Y$ be a morphism of finite type, $x\in X$, and $y=f(x)$.
+    Then the following conditions are equivalent:
+    \begin{enumerate}[\normalfont(i)]
+        \item $\O_x/\mathfrak{m}_y\O_x$ is a finite separable extension of $k(y)$.
+        \item $\Omega_{X/Y}^1$ is \unsure{null} in $x$.
+        \item The diagonal morphism $\Delta_{X/Y}$ is an open immersion on a neighbourhood of $x$.
+    \end{enumerate}
+\end{prop}
+
+\begin{proof}
+    For the implication (i) $\implies$ (ii), we are brought by Nakayama to the case where $Y=\Spec(k)$ and $X=\Spec(k')$, where it is well known and otherwise trivial by the definition of separable; (ii) $\implies$ (iii) comes from a nice and easy characterisation of open immersions, using Krull; (iii) $\implies$ (i) follows as well from reducing to the case where $Y=\Spec(k)$ and the diagonal morphism is everywhere an open immersion.
+    One must then prove that $X$ is finite \completelyunsure and this leads us to consider the case where $k$ is algebraically closed.
+    But then every closed point of $X$ is isolated (since it is identical to the inverse image of the diagonal by the morphism $X\to X\times_k X$ defined by $x$), whence $X$ is finite.
+    We can thus suppose that $X$ reduces to a point, of the ring $A$, and so $A\otimes_k A\to A$ is an isomorphism, hence $A=k$.
+\end{proof}
+
+\begin{defn}
+    \begin{enumerate}[\normalfont(a)]
+        \item We then say that $f$ is \emph{unramified} in $x$, or that $X$ is unramified in $x$ on $Y$.
+        \item Let $A\to B$ be a local homomorphism.
+            We say that it is \emph{unramified}, or that $B$ is a local \emph{unramified} algebra on $A$, if $B/mathfrak{r}(A)B$ is a finite separable extension of $A/\mathfrak{r}(A)$, i.e. if $\mathfrak{r}(A)B=\mathfrak{r}(B)$ and $k(B)$ is a separable extension of $k(A)$\footnote{Cf. regrets in III~1.2.}.
+    \end{enumerate}
+\end{defn}
+
+\begin{rem}
+    The fact that $B$ is unramified over $A$ \completelyunsure.
+    Unramified implies quasi-finite.
+\end{rem}
+
+\begin{cor}
+    The set of points where $f$ is unramified is open.
+\end{cor}
+
