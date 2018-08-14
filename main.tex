@@ -1,16 +1,20 @@
 \documentclass{amsbook}
 
-\include{0preamble.tex}
+\include{includes/preamble}
+\include{includes/commands}
 
 \title{Rev\^etements \'Etales and the Fundamental Group\\(SGA I)}
 \author{Alexander Grothendieck}
 \date{\today}
 
+% \embedfile{\jobname.tex}
+
 \begin{document}
 \maketitle
 \tableofcontents{}
 
-\input{notes.tex}
-\input{6fibredcatsdescent.tex}
+\input{notes}
+\input{chapters/1-etale-morphisms}
+\input{chapters/5-fibered-categories-descent}
 
 \end{document}
