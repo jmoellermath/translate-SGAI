@@ -22,7 +22,7 @@ Very little has been translated so far. If there is a section you would like to 
 
  - Chapter 6
     - Chapter 6 Section 0 is done.
-    - Joe is working on chapter 6 Section 1.
+    - Chapter 6 Section 1 is done.
     - Chapter 6 Section 8 is done.
 
  - Chapter 7
