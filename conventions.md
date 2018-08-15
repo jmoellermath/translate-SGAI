@@ -1,4 +1,4 @@
-- If you are uncertain about any specific word or phrase in your translation then you can wrap it in the `\unsure{}` command to highlight it; if there is a whole bit that you want to skip for the moment you can use `\completelyunsure`, which is just `\unsure{[\ldots]}`.
+- If you are uncertain about any specific word or phrase in your translation then you can wrap it in the `\unsure{}` command to highlight it, and add an optional margin note with `\unsure[lorem ipsum]{}`; if there is a whole bit that you want to skip for the moment you can use `\completelyunsure`, which is just `\unsure{[\ldots]}`.
 - `\newcommand` definitions go in `includes/commands.tex`.
 - Environment definitions are currently in `preamble.tex`.
 - Any small (or even big) comments on any corrections or suggestions should be submitted as issues, so that people can see what's been discussed (and when).
