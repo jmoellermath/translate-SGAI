@@ -1,14 +1,15 @@
 \usepackage[utf8]{inputenc}
-\usepackage[backend=biber]{biblatex}
+% \usepackage[backend=biber]{biblatex}
 \usepackage{hyperref}
 \usepackage{soul,color}
 \usepackage{amsmath, amsthm, amsfonts, amssymb, mathrsfs}
 \usepackage{tikz, tikz-cd}
 \usepackage{embedfile}
+\usepackage{enumerate}
 
 % theorem environments
 \theoremstyle{plain}
-\newtheorem{thm}{Theorem}
+\newtheorem{thm}{Theorem}[section]
 \newtheorem{lem}[thm]{Lemma}
 \newtheorem{prop}[thm]{Proposition}
 \newtheorem{cor}[thm]{Corollary}
@@ -24,5 +25,5 @@
 \newtheorem{expl*}[thm]{Example}
 %
 \theoremstyle{remark}
-\newtheorem{rem}[thm]{Remark}
+\newtheorem*{rem}{Remark}
 \newtheorem{note}[thm]{Note}
