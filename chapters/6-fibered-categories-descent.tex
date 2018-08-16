@@ -27,37 +27,33 @@ Most proofs, reducing to verifications, are omitted or simply sketched out; if s
 
 \section{Universe, Categories, Equivalence of Categories}
 
-To avoid certain logical difficulties, we will admit here the notion of Universe, which is a set ``big enough'' so that we do not leave it by the usual operations of set theory; an ``Axiom of Universes'' guarantees that every object is in a universe. 
-For details, see a book in preparation by C. Chevalley and the lecturer (1). 
-Thus, the acronym $\Ens$ designates, not the category of all sets (notion that does not make sense), but the category of sets found in a given universe (which we will not describe here in the notation). 
-Similarly, $\Cat$ will indicate the category of categories in the Universe in question,
-the ``morphisms'' from an object $X$ of $\Cat$ to another $Y$, being by definition the \emph{functors} from $X$ to $Y$.
+To avoid certain logical difficulties, we introduce here the notion of a \emph{Universe}, which is a set ``big enough'' that we do not leave it by the usual operations of set theory; an ``Axiom of Universes'' guarantees that every object is in some universe. 
+For details, see a book in preparation by C. Chevalley and the \marginpar{\small The \emph{conférencier} is the master of ceremonies, or chairman, of a conference. In this case (so it would appear) it was P.~Gabriel. [trans.]}conférencier\footnote{The finalised authors are C. Chevalley and P. Gabriel. The book should come out in the year 3000. Whilst waiting, cf. as well SGA~4~I.}. 
+Thus the abbreviation $\Ens$ designates, not the category of all sets (a notion that does not make sense), but the category of all sets found in a given Universe (which we omit from the notation). 
+Similarly, $\Cat$ will indicate the category of categories in the Universe in question, and the ``morphisms'' from an object $X$ of $\Cat$ to another $Y$ are by definition the \emph{functors} from $X$ to $Y$.
 
-If $\C$ is a category, we denote by $\Ob (\C)$ the \emph{set of objects} of $\C$, by $\Fl (\C)$ the \emph{set of arrows} of $\C$ (or morphisms of $\C$). 
-We will then write $X \in \Ob (\C)$ avoiding the current notation abuse $X \in \C$. 
-If $\C$ and $\C'$ are two categories, a \emph{functor} from $\C$ to $\C'$ will always be what is commonly called a \emph{covariant functor} from $\C$ to $\C'$; its data implies that of the target category and the source category, $\C$ and $\C'$. The functors from $\C$ to $\C'$ form a set, denoted $\Hom (\C, \C')$, which is the set of objects of a category denoted $\Hom (\C, \C')$.
-By definition, a \emph{contravariant functor} from $\C$ to $\C'$ is a functor of the \emph{opposite category} $\C^{op}$ from $\C$ to $\C'$.
+\oldpage{147}If $\C$ is a category, we denote by $\Ob (\C)$ the \emph{set of objects} of $\C$ and by $\Fl (\C)$ the \emph{set of arrows} of $\C$ (or morphisms of $\C$). 
+We will then write $X \in \Ob (\C)$, avoiding the current abuse of notation $X \in \C$. 
+If $\C$ and $\C'$ are two categories then a \emph{functor} from $\C$ to $\C'$ will always be what is usually called a \emph{covariant functor} from $\C$ to $\C'$; its data implies that of the target category and the source category, $\C$ and $\C'$. The functors from $\C$ to $\C'$ form a set, denoted $\Hom (\C, \C')$, which is the set of objects of a category denoted $\textbf{Hom} (\C, \C')$.
+By definition, a \emph{contravariant functor} from $\C$ to $\C'$ is a functor from the \emph{opposite category} $\C^{op}$ of $\C$ to $\C'$.
 
-We will admit the notion of \emph{projective limit} and \emph{inductive limit} of a functor $F \colon \I \to \C$, and in particular the most common special cases of this notion:
-Cartesian products and fiber products, dual notions of direct sums and amalgamated sums, and the usual formal properties of these operations.
+We also take as given the notion of a \emph{projective limit} and \emph{inductive limit} of a functor $F \colon \I \to \C$, and in particular the most common special cases of this notion:
+Cartesian products and fibre products, dual notions of direct sums and amalgamated sums, and the usual formal properties of these operations.
 
 For example, in the category $\Cat$ introduced earlier, the projective limits
-(relating to categories found in the chosen Universe) exist; the set of objects (respectively the set of arrows) of the projective limit category $\C$ of the $\C_i$ is obtained by taking the projective limit of sets of objects (resp. arrows) of the categories $\C_i$. The best known case is that of the product of a family of
-categories. We will use constantly hereafter the fiber product of two categories
-on a third.
+(relative to categories found in the chosen Universe) exist; the set of objects (respectively the set of arrows) of the projective limit category $\C$ of the $\C_i$ is obtained by taking the projective limit of sets of objects (resp. arrows) of the categories $\C_i$. The best known case is that of the product of a family of
+categories. We will constantly use the fiber product of two categories
+over a third.
 
-For all that concerns categories and functors, while waiting for the book already in preparation, see [1] (which is necessarily very incomplete, even in
-concerning the generalities outlined in this issue).
+For everything concerning categories and functors, while waiting for the book already in preparation, see [\textbf{1}] (which is necessarily very incomplete, even concerning the generalities outlined here).
 
-Let us take this opportunity to explain the concept of equivalence of categories, which is not satisfactorily exposed in [1]. 
-A functor $F \colon \C \to \C'$ is said to be \emph{faithful} (resp. \emph{fully faithful}) if for any pair of objects $S, T$ of $\C$, the function $u \mapsto F (u)$ from $\Hom (S, T)$ to $\Hom (F (S), F (T))$ is injective (respectively bijective). 
+We take this opportunity to explain the concept of equivalence of categories, which is not satisfactorily exposed in [\textbf{1}]. 
+A functor $F \colon \C \to \C'$ is said to be \emph{faithful} (resp. \emph{fully faithful}) if, for any pair of objects $S, T$ of $\C$, the function $u \mapsto F (u)$ from $\Hom (S, T)$ to $\Hom (F (S), F (T))$ is injective (respectively bijective). 
 We say that $F$ is an \emph{equivalence} of categories if $F$ is fully faithful, and if any object $S'$ of $\C'$ is isomorphic to an object of the form $F (S)$.
-We show that it is the same to say that there exists a functor $G$ from $\C'$ to $\C$ quasi-inverse of $F$, i.e.\ such that $GF$ is isomorphic to $id_\C$.
+We show that it is the same to say that there exists a functor $G$ from $\C'$ to $\C$ that is quasi-inverse of $F$, i.e.\ such that $GF$ is isomorphic to $id_\C$.
 When this is so, the data of a functor $G \colon \C' \to \C$ and an isomorphism $\varphi \colon GF \to id_{\C'}$ equals the data, for all $S' \in \Ob (\C')$, of a pair $(S, u)$ consisting of an object $S$ of $\C$ and an isomorphism $u \colon F (S) \to S'$, i.e.\ $(G (S), \varphi (S))$.
-
-(With these notations, there exists a unique functor $C' \to C$ having the given function $S \mapsto G (S)$ as function-objects, and such that the function $S \mapsto \varphi (S)$ is a homomorphism of functors $FG \to id_{\C'}$).
-%
-Finally, if $G$ is a quasi-inverse functor of $F$, and if one chooses isomorphisms $\varphi \colon FG \xrightarrow{\sim} id_{\C'}$ and $\psi \colon GF \xrightarrow{sim} id_\C$, then the two compatibility conditions on $\varphi$ and $\psi$ stated in [1, I.1.2] are in fact equivalent to each other, and for every isomorphism $\varphi$ chosen, there exists a unique isomorphism such that these conditions are satisfied.
+(With this notation, there exists a unique functor $C' \to C$ having the given function $S \mapsto G (S)$ as function-objects, and such that the function $S \mapsto \varphi (S)$ is a homomorphism of functors $FG \to id_{\C'}$).
+Finally, if $G$ is a quasi-inverse functor of $F$, and if one chooses isomorphisms $\varphi \colon FG \xrightarrow{\sim} id_{\C'}$ and $\psi \colon GF \xrightarrow{sim} id_\C$, then the two compatibility conditions on $\varphi$ and $\psi$ stated in [\textbf{1}, I.1.2] are in fact equivalent to each other, and for every isomorphism $\varphi$ chosen, there exists a unique isomorphism such that these conditions are satisfied.
 
 
 \section{Categories over another}
