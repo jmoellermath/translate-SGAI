@@ -6,7 +6,7 @@
 
 \section{Introduction}
 
-Contrary to what was said in the introduction to the previous chapter, it proved impossible to do descent in the category of preschemes, even in special cases, without having already carefully developed the language of descent in general categories.
+\oldpage{145}Contrary to what was said in the introduction to the previous chapter, it proved impossible to do descent in the category of preschemes, even in special cases, without having already carefully developed the language of descent in general categories.
 
 The notion of ``descent'' provides the general framework for all processes of ``gluing'' objects, and therefore of ``gluing'' of categories. 
 The most classic case of gluing relates to the data of a topological space $X$ and a cover of $X$ by open sets $X_i$; if we consider for all $i$ a fibre bundle (say) $E_i$ above $X_i$, and for every pair $(i, j)$ an isomorphism $f_{ji}$ of $E_i| X_{ij}$ on $E_j | X_{ij}$ (where we put $X_{ij} = X_i \cap Xj$), 
@@ -15,7 +15,7 @@ we know that there is a fibre bundle $E$ on $X$, defined up to isomorphism with 
 Let $X'$ be the space given by the sum of the $X_i$, which is therefore a fibre space over $X$ (i.e. equipped with a continuous mapping $X' to X$).
 We can then more concisely think of the data of the $E_i$ as a fibre bundle $E'$ over $X'$, and the data of the $f_{ji}$ as an isomorphism between the two inverse images (by the two canonical projections) $E_1''$ and $E_2''$ of $E'$ over $X''=X'\times_X X'$, whence the gluing condition can be written as an identity between isomorphisms of fibre bundles $\E_1'''$ and $\E_2'''$ on the triple fibre product $X'''= X' \times_X X' \times_X X'$ (where $E_i'''$ denotes the inverse image of $E'$ on $X'''$ by the canonical projection of index $i$).
 The construction of $E$, from $E '$ and $f$, is a typical case of ``descent''.
-Moreover, starting from a fibre bundle $E$ on $X$, one says that $X$ is ``locally trivial'', of fibre $F$, if there exists an open covering $(X_i)$ of $X$ such that the $E| X_i$ are isomorphic to $F \times X_i$, or, equivalently, such that the inverse image $E'$ of $E$ over $X' = \coprod_i X_i$ is isomorphic to $X'\times F$.
+Moreover, \oldpage{146}starting from a fibre bundle $E$ on $X$, one says that $X$ is ``locally trivial'', of fibre $F$, if there exists an open covering $(X_i)$ of $X$ such that the $E| X_i$ are isomorphic to $F \times X_i$, or, equivalently, such that the inverse image $E'$ of $E$ over $X' = \coprod_i X_i$ is isomorphic to $X'\times F$.
 
 Thus the notion of ``gluing'' objects, like the ``localisation'' of a property, is related to the study of certain types of ``base changes'' $X '\to X$. 
 In algebraic geometry many other types of base change, and in particular faithfully flat morphisms $X '\to X$, should be considered as corresponding to a process of ``localisation'' relative to preschemes, or other objects, ``over'' $X$.
@@ -34,69 +34,73 @@ Most proofs, reducing to verifications, are omitted or simply sketched out; if s
 
 \section{Cartesian morphisms, inverse images, Cartesian functors}
 
-\section{Fibred categories and prefibred categories. Products and change of base in icelles(?)}
+\section{Fibred categories and prefibred categories. Products and change of base within.}
 
 \section{Cloven categories over E}
 
 \section{Cloven Fibration defined from a pseudofunctor}
 
-Call, to abbreviate, pseudofunctor of $\E^{op}$ in $\Cat$ (it should be said, pseudo-normalized functor), a set of data a), b), c) as above, satisfying the conditions A ') and B). 
-In the previous section, we have associated a pseudofunctor $\E^{op} \to \Cat$ with a split fibration normalized on $\E$, here we will indicate the inverse construct. 
-We will leave the reader to verify most of the details, as well as the fact that these constructions are ``inverse'' to each other. 
-Specifically, we should consider the pseudofunctors $\E^{op} \to \Cat$ as the objects of a new category, and show that our constructions provide equivalences, quasi-inverses one from the other, between the latter and the category of cloven categories above $\E$, defined in the preceding section.
+As an abbreviation, we say \emph{pseudofunctor} of $\E^{op}$ in $\Cat$ (though really we should say \emph{normalized} pseudo-functor), a set of data a), b), c) as above, satisfying the conditions A') and B).
+In the previous section, we associated a pseudofunctor $\E^{op}\to\Cat$ to a normalized cloven fibration on $\E$, and here we will describe the inverse construction.
+We will leave to the reader the verification of most of the details, as well as the fact that these constructions are ``inverse'' to each other. 
+Specifically, we should consider the pseudofunctors $\E^{op} \to \Cat$ as the objects of a new category, and show that our constructions provide equivalences, quasi-inverse to each other, between the above and the category of cloven categories above $\E$, as defined in the preceding section.
 
-We put 
+We write 
 \[\F_\circ = \coprod_{S \in \Ob (\E)} \Ob(\F(S)),\] 
-together sum of sets $\Ob(\F (S))$ (N.B.\ we will note here $\F(S)$ and not $\F_S$ the value in the object $S$ of $\E$ of the pseudofunctor gives, to avoid confusion of notation thereafter). So we have an obvious mapping: 
+the sum of sets $\Ob(\F (S))$ (N.B.\ we will write $\F(S)$ and not $\F_S$ to mean the the value in the object $S$ of $\E$ of the given pseudofunctor to avoid confusion of notation thereafter).
+We then have an obvious map:
 \[p_\circ \colon \F_\circ \to \Ob \E.\]
 Let 
 \[\oxi = (S, \xi), \, \oeta = (T, \eta) \qquad (\text{where } \xi \in \Ob \F(S), \, \eta \in \Ob \F(T))\]
-two elements of $\F_\circ$, and $f \in \Hom(T,S)$, we let
+be two elements of $\F_\circ$, and let $f \in \Hom(T,S)$.
+We then define
 \[h_f(\oeta, \oxi) = \Hom_{\F(T)}(\eta, f^\ast(\xi)).\]
-If we also have a morphism $g \colon U \to T$ in $\E$, and a $\zeta \in \Ob \F (U)$, we define a function, denoted $(u,v) \mapsto u \circ v$:
+If we also have a morphism $g \colon U \to T$ in $\E$, and some $\zeta \in \Ob \F (U)$, we define a function, denoted $(u,v) \mapsto u \circ v$:
 \[h_f(\oeta, \oxi) \times h_g(\ozeta, \oeta) \to h_{fg}(\ozeta, \oxi),\]
 i.e.\ a function
 \[Hom_{\F(T)} (\eta, f^\ast(\xi)) \times \Hom_{\F(U)} (\zeta, g^\ast(\eta)) \to \Hom_{\F(U)} (\zeta, (fg)^\ast(\xi)),\]
-for the formula
+given by the formula
 \[u \circ v = c_{f,g} (\xi) \cdot g^\ast(U) \cdot v,\]
-i.e.\ $u \circ v$ is the composite of the sequence 
+i.e.\ $u \circ v$ is the composition of the sequence 
 \[
 \zeta \xrightarrow{u} g^\ast(\eta) \xrightarrow{g^\ast(u)} g^\ast f^\ast(\xi) \xrightarrow{c_{f,g}(\xi)} (fg)^\ast(\xi).\]
-On the other hand 
+Further define
 \[
     h(\oeta, \oxi) = \coprod_{f \in \Hom(T,S)} h_f(\oeta, \oxi),
 \]
 and the previous couplings define couplings
 \[h(\oeta, \oxi) \times h(\ozeta, \oeta) \to h(\ozeta, \oxi),\]
-while the definition of $h (\oeta, \oxi)$ implies an obvious function:
+and the definition of $h (\oeta, \oxi)$ gives an obvious function:
 \[p_{\oeta, \oxi}
 \colon h(\oeta, \oxi) \to \Hom(T, S).\]
-That said, we check the following points:
+With these definitions, we verify the following properties:
 \begin{enumerate}
-    \item The composition between elements of $h (\oeta, \oxi)$ is \emph{associative}.
+    \item The composition of elements of $h (\oeta, \oxi)$ is \emph{associative}.
     \item For all $\oxi = (\xi, S)$ in $\F_\circ$, consider the identity element of
     \[h_{id_S} (\oxi, \oxi) = \Hom_{\F(S)} (id_S^\ast(\xi), \xi) = \Hom_{\F(S)}(\xi,\xi),\]
-    and its image in $h (\oxi,\oxi)$. This object is a unit on the left and right for the composition between elements of $h (\oeta, \oxi)$.
+    and its image in $h (\oxi,\oxi)$.
+        This object is a left and right unit for the composition of elements of $h (\oeta, \oxi)$.
 \end{enumerate}
 
-This already shows that we get a category $\F$, by posing
+Already, this shows that we get a category $\F$, by posing
 \[\Ob \F = \F_\circ, \quad \Fl \F = \coprod_{\oxi, \oeta \in \F_\circ} h(\oeta, \oxi).\]
-
-(N.B.\ we can not simply take for $\Fl \F$ the union of the sets $h (\oeta, \oxi)$, because these are not necessarily disjoint.) Furthermore:
+(N.B.\ we can not simply take for $\Fl \F$ the union of the sets $h (\oeta, \oxi)$, because these are not necessarily disjoint.).
+Furthermore:
 \begin{enumerate}
     \setcounter{enumi}{2}
-    \item The functions $p_\circ \colon \Ob \F \to \Ob \E$ and $p_1 = (p_{\oeta, \oxi} \colon \Fl\F \to \Fl \E$ define a \emph{functor} $p \colon \F \to \E$. In this way, F becomes a category on E, moreover the obvious function $h_f (\oeta, \oxi) \to \Hom (\oeta, \oxi)$ induces a \emph{bijection}
+    \item The functions $p_\circ \colon \Ob \F \to \Ob \E$ and $p_1 = (p_{\oeta, \oxi} \colon \Fl\F \to \Fl \E$ define a \emph{functor} $p \colon \F \to \E$. In this way, $\F$ becomes a category over $\E$, and moreover the obvious function $h_f (\oeta, \oxi) \to \Hom (\oeta, \oxi)$ induces a \emph{bijection}
     \[h_f(\oeta, \oxi) \xrightarrow{\sim} \Hom_f(\oeta, \oxi).\]
     \item The obvious functions
     \[\Ob \F(S) \to \F_\circ = \Ob \F, \quad \Fl \F(S) \to \Fl\F,\]
-    or the second is defined by the obvious functions
+    where the second is defined by the obvious maps
     \[\Hom_{\F(S)} (\xi, \xi') = h_{id_S}(\oxi,\oxi') \to \Hom(\oxi, \oxi')\]
     define an \emph{isomorphism}
     \[i_S \colon \F(S) \xrightarrow{\sim} \F_S.\]
-    \item For every object $\oxi = (S, \xi)$ of $\F$, and every morphism $f \colon T \to S$ of $\E$, let us consider the element $\oeta = (T, \eta)$ of $\F_T$, 
-    with $\eta = f^\ast (\xi)$, and the element $\alpha_f (\xi)$ of $\Hom (\oeta, \oxi)$, image of $id_{f^\ast (\xi)}$ by the morphism $\Hom_{\F (T)} (f^\ast(\xi), f ^\ast(\xi)) = h_f (\oeta, \oxi) \to \Hom_f (\oeta, \oxi)$. \emph{This element is cartesian, 
-    and that's the identity in $\xi$ if $f = id_S$}, in other words, the whole $\alpha_f (\xi)$ defines a normalized cleavage of $F$ over $E$. 
-    Moreover, by construction, we have commutativity in the functor diagram
+    \item For every object $\oxi = (S, \xi)$ of $\F$, and every morphism $f \colon T \to S$ of $\E$, consider the element $\oeta = (T, \eta)$ of $\F_T$, 
+    with $\eta = f^\ast (\xi)$, and $\alpha_f (\xi)$ of $\Hom (\oeta, \oxi)$, the image of $id_{f^\ast (\xi)}$ under the morphism $\Hom_{\F (T)} (f^\ast(\xi), f ^\ast(\xi)) = h_f (\oeta, \oxi) \to \Hom_f (\oeta, \oxi)$.
+    \emph{This element is cartesian, and it is the identity in $\xi$ if $f = id_S$}.
+    In other words, the set of all $\alpha_f (\xi)$ defines a normalized cleavage of $\F$ over $\E$. 
+    Further, by construction, we have commutativity in the diagram of functors
     \[
     \begin{tikzcd}
         \F(S)
@@ -112,15 +116,15 @@ This already shows that we get a category $\F$, by posing
         \F_T
     \end{tikzcd}\]
     where $f^\ast_\F$ is the inverse image functor by $f$, relative to the cleavage considered on $\F$. Finally:
-    \item the homomorphisms $c_{f, g}$ given by the pseudofunctor are transformed, by the isomorphisms $i_S$, in functorial homomorphisms $c_{f, g}$ associated with the cleavage of $\F$.
+    \item the homomorphisms $c_{f, g}$ given by the pseudofunctor are transformed, by the isomorphisms $i_S$, to functorial homomorphisms $c_{f, g}$ associated with the cleavage of $\F$.
 \end{enumerate}
-We confine ourselves to giving the verification of 1) (which is, if possible, less trivial than the others). It is enough to prove the associativity of the composition between the objects of sets of the form $h_f (\oeta, \oxi)$. So let's consider in $\E$ morphisms
+We restrict ourselves to giving the verification of 1) (which is, if possible, less trivial than the others). It is enough to prove the associativity of the composition between the objects of the sets of the form $h_f (\oeta, \oxi)$. So consider the morphisms in $\E$
 \[
     S \xleftarrow{f} T \xleftarrow{g} U \xleftarrow{h} V
 \]
 and the objects
 \[\xi, \eta, \zeta, \tau\]
-in $\F (S), \F (T), \F (U), \F (V)$, finally some elements
+in $\F (S), \F (T), \F (U), \F (V)$, as well as some elements
 \begin{align*}
     &u \in h_f(\oeta, \oxi) = \Hom_{\F(T)} (\eta, f^\ast(\xi))\\
     &v \in h_g(\ozeta, \oeta) = \Hom_{\F(U)} (\zeta, g^\ast(\eta))\\
@@ -129,7 +133,7 @@ in $\F (S), \F (T), \F (U), \F (V)$, finally some elements
 We want to prove the formula
 \[(u \circ v) \circ w = u \circ (v \circ w),
 \]
-which is an equality in $\Hom_{\F (V)} (\tau, (fgh)^\ast(\xi))$. By virtue of the definitions both members of this equality are obtained by composition following the superior contour and bottom of the diagram below:
+which is an equality in $\Hom_{\F (V)} (\tau, (fgh)^\ast(\xi))$. By virtue of the definitions both members of this equality are obtained by composition following the top and bottom arrows of the diagram below:
 \[
 \begin{tikzcd}
     \tau
@@ -159,11 +163,8 @@ which is an equality in $\Hom_{\F (V)} (\tau, (fgh)^\ast(\xi))$. By virtue of th
     &
     (fgh)^\ast (\xi)
 \end{tikzcd}\]
-Now the middle square is commutative because $c_{g, h}$ is a functorial homomorphism, and
-the square on the right is commutative under condition B) for a pseudofunctor.
-Hence the desired result.
+Now the middle square is commutative because $c_{g, h}$ is a functorial homomorphism, and the square on the right is commutative under condition B) for a pseudofunctor, whence the desired result.
 
-Of course, it remains to be precise, when the pseudofunctor envisaged comes from already a normalized cloven category $\F'$
-over $\E$, how do we get an natural isomorphism between $\F'$ and $\F$. We leave the details to the reader.
+Of course, it remains to make precise, in the case where the pseudofunctor already comes from a normalized cloven category $\F'$ over $\E$, how we get n natural isomorphism between $\F'$ and $\F$. We leave the details to the reader.
 
-We also allow the reader to interpret, in terms of pseudofunctors, the notion of inverse image of a split category $\F$ over $\E$ by a change of base functor $\E'\to \E$.
+We also allow the reader to interpret, in terms of pseudofunctors, the notion of inverse image of a cloven category $\F$ over $\E$ by a change of base functor $\E'\to \E$.
