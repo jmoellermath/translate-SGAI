@@ -40,7 +40,7 @@ Most proofs, reducing to verifications, are omitted or simply sketched out; if s
 
 \section{Cloven Fibration defined from a pseudofunctor}
 
-As an abbreviation, we say \emph{pseudofunctor} of $\E^{op}$ in $\Cat$ (though really we should say \emph{normalized} pseudo-functor), a set of data a), b), c) as above, satisfying the conditions A') and B).
+As an abbreviation, we say \emph{pseudofunctor} of $\E^{op}$ in $\Cat$ (really we should say \emph{normalized} pseudo-functor) to mean a set of data a), b), c) as above, satisfying the conditions A') and B).
 In the previous section, we associated a pseudofunctor $\E^{op}\to\Cat$ to a normalized cloven fibration on $\E$, and here we will describe the inverse construction.
 We will leave to the reader the verification of most of the details, as well as the fact that these constructions are ``inverse'' to each other. 
 Specifically, we should consider the pseudofunctors $\E^{op} \to \Cat$ as the objects of a new category, and show that our constructions provide equivalences, quasi-inverse to each other, between the above and the category of cloven categories above $\E$, as defined in the preceding section.
@@ -55,7 +55,7 @@ Let
 be two elements of $\F_\circ$, and let $f \in \Hom(T,S)$.
 We then define
 \[h_f(\oeta, \oxi) = \Hom_{\F(T)}(\eta, f^\ast(\xi)).\]
-If we also have a morphism $g \colon U \to T$ in $\E$, and some $\zeta \in \Ob \F (U)$, we define a function, denoted $(u,v) \mapsto u \circ v$:
+\oldpage{176}If we also have a morphism $g \colon U \to T$ in $\E$, and some $\zeta \in \Ob \F (U)$, we define a function, denoted $(u,v) \mapsto u \circ v$:
 \[h_f(\oeta, \oxi) \times h_g(\ozeta, \oeta) \to h_{fg}(\ozeta, \oxi),\]
 i.e.\ a function
 \[Hom_{\F(T)} (\eta, f^\ast(\xi)) \times \Hom_{\F(U)} (\zeta, g^\ast(\eta)) \to \Hom_{\F(U)} (\zeta, (fg)^\ast(\xi)),\]
@@ -75,14 +75,14 @@ and the definition of $h (\oeta, \oxi)$ gives an obvious function:
 \colon h(\oeta, \oxi) \to \Hom(T, S).\]
 With these definitions, we verify the following properties:
 \begin{enumerate}
-    \item The composition of elements of $h (\oeta, \oxi)$ is \emph{associative}.
+    \item \oldpage{177}The composition of elements of $h (\oeta, \oxi)$ is \emph{associative}.
     \item For all $\oxi = (\xi, S)$ in $\F_\circ$, consider the identity element of
     \[h_{id_S} (\oxi, \oxi) = \Hom_{\F(S)} (id_S^\ast(\xi), \xi) = \Hom_{\F(S)}(\xi,\xi),\]
     and its image in $h (\oxi,\oxi)$.
         This object is a left and right unit for the composition of elements of $h (\oeta, \oxi)$.
 \end{enumerate}
 
-Already, this shows that we get a category $\F$, by posing
+Already, this shows that we get a category $\F$ by setting
 \[\Ob \F = \F_\circ, \quad \Fl \F = \coprod_{\oxi, \oeta \in \F_\circ} h(\oeta, \oxi).\]
 (N.B.\ we can not simply take for $\Fl \F$ the union of the sets $h (\oeta, \oxi)$, because these are not necessarily disjoint.).
 Furthermore:
@@ -93,10 +93,10 @@ Furthermore:
     \item The obvious functions
     \[\Ob \F(S) \to \F_\circ = \Ob \F, \quad \Fl \F(S) \to \Fl\F,\]
     where the second is defined by the obvious maps
-    \[\Hom_{\F(S)} (\xi, \xi') = h_{id_S}(\oxi,\oxi') \to \Hom(\oxi, \oxi')\]
+    \[\Hom_{\F(S)} (\xi, \xi') = h_{id_S}(\oxi,\oxi') \to \Hom(\oxi, \oxi'),\]
     define an \emph{isomorphism}
     \[i_S \colon \F(S) \xrightarrow{\sim} \F_S.\]
-    \item For every object $\oxi = (S, \xi)$ of $\F$, and every morphism $f \colon T \to S$ of $\E$, consider the element $\oeta = (T, \eta)$ of $\F_T$, 
+    \item \oldpage{178}For every object $\oxi = (S, \xi)$ of $\F$, and every morphism $f \colon T \to S$ of $\E$, consider the element $\oeta = (T, \eta)$ of $\F_T$, 
     with $\eta = f^\ast (\xi)$, and $\alpha_f (\xi)$ of $\Hom (\oeta, \oxi)$, the image of $id_{f^\ast (\xi)}$ under the morphism $\Hom_{\F (T)} (f^\ast(\xi), f ^\ast(\xi)) = h_f (\oeta, \oxi) \to \Hom_f (\oeta, \oxi)$.
     \emph{This element is cartesian, and it is the identity in $\xi$ if $f = id_S$}.
     In other words, the set of all $\alpha_f (\xi)$ defines a normalized cleavage of $\F$ over $\E$. 
@@ -130,7 +130,7 @@ in $\F (S), \F (T), \F (U), \F (V)$, as well as some elements
     &v \in h_g(\ozeta, \oeta) = \Hom_{\F(U)} (\zeta, g^\ast(\eta))\\
     &w \in h_h(\otau, \ozeta) = \Hom_{\F(V)} (\tau, h^\ast(\zeta)).
 \end{align*}
-We want to prove the formula
+\oldpage{179}We want to prove the formula
 \[(u \circ v) \circ w = u \circ (v \circ w),
 \]
 which is an equality in $\Hom_{\F (V)} (\tau, (fgh)^\ast(\xi))$. By virtue of the definitions both members of this equality are obtained by composition following the top and bottom arrows of the diagram below:

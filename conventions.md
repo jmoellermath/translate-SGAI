@@ -2,3 +2,4 @@
 - `\newcommand` definitions go in `includes/commands.tex`.
 - Environment definitions are currently in `preamble.tex`.
 - Any small (or even big) comments on any corrections or suggestions should be submitted as issues, so that people can see what's been discussed (and when).
+- 'notes by the translator' (e.g. about words that don't translate (cf multipodoque')) should be clearly distinguished from original footnotes, maybe just end them with `[trans.]` or put them in the margin?
