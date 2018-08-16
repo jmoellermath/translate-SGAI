@@ -1,7 +1,7 @@
 # An English Translation of Grothendieck's *SGA*
 
-The purpose of this project is to crowdsource an English translation of  Alexander Grothendieck's notes from the [*Séminaire de Géométrie Algébrique du Bois Marie (SGA)*](https://en.wikipedia.org/wiki/Séminaire_de_Géométrie_Algébrique_du_Bois_Marie).
-Thanks to a [project led by Frank Calegari, Jim Borger, and William Stein](http://www.math.leidenuniv.nl/~edix/public_html_rennes/sgahtml/), a typeset copy of the *SGA* (in french) can be found [here on the ArXiv:0206203](https://arxiv.org/abs/math/0206203). While some knowledge of French will be useful in order to contribute to this project, it's not strictly necessary. Some knowledge of algebraic geometry and [Google Translate](https://translate.google.com/#fr/en/Séminaire%20de%20Géométrie%20Algébrique%20du%20Bois%20Marie) is sufficient.
+The purpose of this project is to crowdsource an UNOFFICIAL English translation of  Alexander Grothendieck's notes from the [*Séminaire de Géométrie Algébrique du Bois Marie (SGA)*](https://en.wikipedia.org/wiki/Séminaire_de_Géométrie_Algébrique_du_Bois_Marie).
+Thanks to a [project led by Frank Calegari, Jim Borger, and William Stein](http://www.math.leidenuniv.nl/~edix/public_html_rennes/sgahtml/), a typeset copy of the *SGA* (in french) can be found [here on the ArXiv:0206203](https://arxiv.org/abs/math/0206203). While some knowledge of French will be useful in order to contribute to this project, it's not strictly necessary. Some knowledge of TeX and [Google Translate](https://translate.google.com/#fr/en/Séminaire%20de%20Géométrie%20Algébrique%20du%20Bois%20Marie) is sufficient.
 
 ## Coordination
 
@@ -22,8 +22,8 @@ Very little has been translated so far. If there is a section you would like to 
 
  - Chapter 6
     - Chapter 6 Section 0 is done.
+    - Chapter 6 Section 1 is done.
     - Chapter 6 Section 8 is done.
-    - Joe is working on chapter 6 Section 9.
 
  - Chapter 7
     - This chapter doesn't exist.
