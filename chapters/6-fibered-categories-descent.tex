@@ -49,7 +49,7 @@ For everything concerning categories and functors, while waiting for the book al
 
 We take this opportunity to explain the concept of equivalence of categories, which is not satisfactorily exposed in [\textbf{1}]. 
 A functor $F \colon \C \to \C'$ is said to be \emph{faithful} (resp. \emph{fully faithful}) if, for any pair of objects $S, T$ of $\C$, the function $u \mapsto F (u)$ from $\Hom (S, T)$ to $\Hom (F (S), F (T))$ is injective (respectively bijective). 
-We say that $F$ is an \emph{equivalence} of categories if $F$ is fully faithful, and if any object $S'$ of $\C'$ is isomorphic to an object of the form $F (S)$.
+We say that $F$ is an \emph{equivalence} of categories if $F$ is fully faithful, and \oldpage{148}if any object $S'$ of $\C'$ is isomorphic to an object of the form $F (S)$.
 We show that it is the same to say that there exists a functor $G$ from $\C'$ to $\C$ that is quasi-inverse of $F$, i.e.\ such that $GF$ is isomorphic to $id_\C$.
 When this is so, the data of a functor $G \colon \C' \to \C$ and an isomorphism $\varphi \colon GF \to id_{\C'}$ equals the data, for all $S' \in \Ob (\C')$, of a pair $(S, u)$ consisting of an object $S$ of $\C$ and an isomorphism $u \colon F (S) \to S'$, i.e.\ $(G (S), \varphi (S))$.
 (With this notation, there exists a unique functor $C' \to C$ having the given function $S \mapsto G (S)$ as function-objects, and such that the function $S \mapsto \varphi (S)$ is a homomorphism of functors $FG \to id_{\C'}$).
