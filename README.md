@@ -7,42 +7,130 @@ Thanks to a [project led by Frank Calegari, Jim Borger, and William Stein](http:
 
 **For conventions and suchlike, see `conventions.md`.**
 
-Very little has been translated so far. If there is a section you would like to claim to translate, just edit this `README.md` and put your name under the section you'd like to help with. 
+Very little has been translated so far. If there is a section you would like to claim to translate, just edit this `README.md` and put your name next to the section you'd like to help with. 
 
- - Chapter 1
-    - @thosgood
+ - [ ] Chapter 1 -- thosgood
+     + [x] §1
+     + [x] §2
+     + [x] §3
+     + [x] §4
+     + [ ] §5
+     + [ ] §6
+     + [ ] §7
+     + [ ] §8
+     + [ ] §9
+     + [ ] §10
+     + [ ] §11
 
- - Chapter 2
+ - [ ] Chapter 2
+     + [ ] §1
+     + [ ] §2
+     + [ ] §3
+     + [ ] §4
+     + [ ] §5 
 
- - Chapter 3
+ - [ ] Chapter 3
+     + [ ] §1
+     + [ ] §2
+     + [ ] §3
+     + [ ] §4
+     + [ ] §5
+     + [ ] §6
+     + [ ] §7
 
- - Chapter 4
+ - [ ] Chapter 4
+     + [ ] §1
+     + [ ] §2
+     + [ ] §3
+     + [ ] §4
+     + [ ] §5
+     + [ ] §6
 
- - Chapter 5
+ - [ ] Chapter 5
+     + [ ] §0
+     + [ ] §1
+     + [ ] §2
+     + [ ] §3
+     + [ ] §4
+     + [ ] §5
+     + [ ] §6
+     + [ ] §7
+     + [ ] §8
+     + [ ] §9
 
- - Chapter 6
-    - Chapter 6 Section 0 is done.
-    - Chapter 6 Section 1 is done.
-    - Chapter 6 Section 8 is done.
+ - [ ] Chapter 6
+     + [x] §0
+     + [x] §1
+     + [ ] §2
+     + [ ] §3
+     + [ ] §4
+     + [ ] §5
+     + [ ] §6
+     + [ ] §7
+     + [x] §8
+     + [ ] §9
+     + [ ] §10
+     + [ ] §11
+     + [ ] §12
+     + [ ] §13
 
- - Chapter 7
+ - [x] Chapter 7
     - This chapter doesn't exist.
 
- - Chapter 8
+ - [ ] Chapter 8
+     + [ ] §1
+     + [ ] §2
+     + [ ] §3
+     + [ ] §4
+     + [ ] §5
+     + [ ] §6
+     + [ ] §7
+     + [ ] §8
 
- - Chapter 9
+ - [ ] Chapter 9
+     + [ ] §1
+     + [ ] §2
+     + [ ] §3
+     + [ ] §4
+     + [ ] §5
+     + [ ] §6
+     + [ ] §7
 
- - Chapter 10
+ - [ ] Chapter 10
+     + [ ] §1
+     + [ ] §2
+     + [ ] §3
+     + [ ] §4
 
- - Chapter 11
+ - [ ] Chapter 11
+     + [ ] §1
+     + [ ] §2
+     + [ ] §3
+     + [ ] §4
+     + [ ] §5
+     + [ ] §6
+     + [ ] §7
 
- - Chapter 12
+ - [ ] Chapter 12
+     + [ ] §1
+     + [ ] §2
+     + [ ] §3
+     + [ ] §4
+     + [ ] §5
+     + [ ] §6
 
- - Chapter 13
+ - [ ] Chapter 13
+     + [ ] §1
+     + [ ] §2
+     + [ ] §3
+     + [ ] §4
+     + [ ] §5
+     + [ ] §6
+     + [ ] §7
 
- - Index of Terminology
+ - [ ] Index of Terminology
 
- - Index of Notation
+ - [ ] Index of Notation
 
 
 ## To-do
