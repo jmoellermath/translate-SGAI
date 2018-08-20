@@ -7,42 +7,129 @@ Thanks to a [project led by Frank Calegari, Jim Borger, and William Stein](http:
 
 **For conventions and suchlike, see `conventions.md`.**
 
-Very little has been translated so far. If there is a section you would like to claim to translate, just edit this `README.md` and put your name under the section you'd like to help with. 
+Very little has been translated so far. If there is a section you would like to claim to translate, just edit this `README.md` and put your name next to the section you'd like to help with. 
 
- - Chapter 1
-    - @thosgood
+ - [ ] Chapter 1 -- Étale morphisms (thosgood)
+     + [x] §1
+     + [x] §2
+     + [x] §3
+     + [x] §4
+     + [ ] §5
+     + [ ] §6
+     + [ ] §7
+     + [ ] §8
+     + [ ] §9
+     + [ ] §10
+     + [ ] §11
 
- - Chapter 2
+ - [ ] Chapter 2 -- Smooth morphisms: generalities, differential properties
+     + [ ] §1
+     + [ ] §2
+     + [ ] §3
+     + [ ] §4
+     + [ ] §5 
 
- - Chapter 3
+ - [ ] Chapter 3 -- Smooth morphisms: properties of extension
+     + [ ] §1
+     + [ ] §2
+     + [ ] §3
+     + [ ] §4
+     + [ ] §5
+     + [ ] §6
+     + [ ] §7
 
- - Chapter 4
+ - [ ] Chapter 4 -- Flat morphisms
+     + [ ] §1
+     + [ ] §2
+     + [ ] §3
+     + [ ] §4
+     + [ ] §5
+     + [ ] §6
 
- - Chapter 5
+ - [ ] Chapter 5 -- The fundamental group: generalities
+     + [ ] §0
+     + [ ] §1
+     + [ ] §2
+     + [ ] §3
+     + [ ] §4
+     + [ ] §5
+     + [ ] §6
+     + [ ] §7
+     + [ ] §8
+     + [ ] §9
 
- - Chapter 6
-    - Chapter 6 Section 0 is done.
-    - Chapter 6 Section 1 is done.
-    - Chapter 6 Section 8 is done.
+ - [ ] Chapter 6 -- Fibred categories and descent
+     + [x] §0
+     + [x] §1
+     + [ ] §2
+     + [ ] §3
+     + [ ] §4
+     + [ ] §5
+     + [ ] §6
+     + [ ] §7
+     + [x] §8
+     + [ ] §9
+     + [ ] §10
+     + [ ] §11
+     + [ ] §12
+     + [ ] §13
 
- - Chapter 7
-    - This chapter doesn't exist.
+ - [x] Chapter 7 -- [does not exist]
 
- - Chapter 8
+ - [ ] Chapter 8 -- Faithfully flat descent
+     + [ ] §1
+     + [ ] §2
+     + [ ] §3
+     + [ ] §4
+     + [ ] §5
+     + [ ] §6
+     + [ ] §7
+     + [ ] §8
 
- - Chapter 9
+ - [ ] Chapter 9 -- Descent for étale morphisms. Applications to the fundamental group
+     + [ ] §1
+     + [ ] §2
+     + [ ] §3
+     + [ ] §4
+     + [ ] §5
+     + [ ] §6
+     + [ ] §7
 
- - Chapter 10
+ - [ ] Chapter 10 -- Theory of specialisation of the fundamental group
+     + [ ] §1
+     + [ ] §2
+     + [ ] §3
+     + [ ] §4
 
- - Chapter 11
+ - [ ] Chapter 11 -- Examples and additional material
+     + [ ] §1
+     + [ ] §2
+     + [ ] §3
+     + [ ] §4
+     + [ ] §5
+     + [ ] §6
+     + [ ] §7
 
- - Chapter 12
+ - [ ] Chapter 12 -- Algebraic geometry and analytic geometry
+     + [ ] §1
+     + [ ] §2
+     + [ ] §3
+     + [ ] §4
+     + [ ] §5
+     + [ ] §6
 
- - Chapter 13
+ - [ ] Chapter 13 -- Cohomological properties of sheaves of sets and non-commutative groups
+     + [ ] §1
+     + [ ] §2
+     + [ ] §3
+     + [ ] §4
+     + [ ] §5
+     + [ ] §6
+     + [ ] §7
 
- - Index of Terminology
+ - [ ] Index of Terminology
 
- - Index of Notation
+ - [ ] Index of Notation
 
 
 ## To-do
