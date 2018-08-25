@@ -139,3 +139,4 @@ Very little has been translated so far. If there is a section you would like to 
  - Translate the thing. ;)
  - Have a current working compiled version of the document in the repository.
  - Create a title page and cover page.
+ - When this is finished (?!) we should [assign a DOI ?](https://guides.github.com/activities/citable-code/)
